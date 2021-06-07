@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from 'react';
+import horneddata from "./data/horneddata.json";
+import HornedBeast from './components/HornedBeast';
+import CardGroup from 'react-bootstrap/CardGroup';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+      <Header/>
+      <CardGroup className="container">
+        {horneddata.map((item,index)=>
+          <HornedBeast 
+          key={index} 
+          imgUrl={item.image_url} 
+          title={item.title} 
+          description={item.description}
+          horns={item.horns}
+          />
+          )}
+          {/* <HornedBeast horneddata={horneddata}/> */}
+      </CardGroup>
+      <Footer/>
+      </div>
+    )
+  }
 }
+
+
+
 
 export default App;
