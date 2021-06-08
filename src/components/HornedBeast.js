@@ -13,24 +13,16 @@ class HornedBeast extends React.Component{
             likesCounter: 0
         }
     }
-   likesCounter =()=>{
+
+   likesCounter = ()=>{
        this.setState({
            likesCounter: this.state.likesCounter+1
        })
    }
+
+   
     render() {
         return (
-            // <div>
-            // <Card>
-            // <Card.Img variant="top" src={this.props.imgUrl}  onClick={this.likesCounter}/>
-            // <Card.Body>
-            // <Card.Title>{this.props.title}</Card.Title>
-            // <Card.Text>Number Of Likes 💥💥{this.state.likesCounter}💥💥</Card.Text>
-            // <Card.Text>{this.props.description}</Card.Text>
-            // <Card.Text>Number Of Horns💥💥{this.props.horns}💥💥</Card.Text>
-            // </Card.Body>
-            // </Card>
-            // </div>
             <div>
             <Card style={{ width: '18rem' }}>
             <Card.Img variant="top" src={this.props.imgUrl}  onClick={this.likesCounter}/>

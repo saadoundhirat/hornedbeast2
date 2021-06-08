@@ -1,4 +1,9 @@
-# solving lab02 
+# Amman-301d22 first week repository:
+------------------------------------------------
+# * insid this repository i will add my solution for the first week project and i will add the estmited time for each lab.
+
+
+## Lab: Class 02 (React State and Props)
 
 ### feature tasks estmited time 
 
@@ -48,3 +53,6 @@
 ** Finish time: __5pm__
 
 ** Actual time needed to complete: __30min__
+
+------------
+## Lab: Class 03 (Passing Functions in Props)
