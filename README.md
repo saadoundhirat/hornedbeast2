@@ -56,3 +56,13 @@
 
 ------------
 ## Lab: Class 03 (Passing Functions in Props)
+
+** Number and name of feature: __#1: Display a Modal__
+
+** Estimate of time needed to complete: ___2h__
+
+** Start time: __2pm__
+
+** Finish time: __5pm__
+
+** Actual time needed to complete: __3h__
