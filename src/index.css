@@ -80,3 +80,13 @@ body div{
 .modal-body p{
   font-size:1.2rem;
 }
+
+/* select  */
+.form-group{
+  margin-left: 10rem;
+  font-size:1.3rem;
+}
+.form-label{
+  margin-right: 5rem;
+  font-size:2.5rem;
+}

@@ -66,3 +66,16 @@
 ** Finish time: __5pm__
 
 ** Actual time needed to complete: __3h__
+_____
+
+## Lab: Class 04 (Forms and Filter)
+
+** Number and name of feature: __#1: Filter by Numbers of Horns__
+
+** Estimate of time needed to complete: ___3h__
+
+** Start time: __3pm__
+
+** Finish time: __10pm__
+
+** Actual time needed to complete: __7h😂😁😁😁__
