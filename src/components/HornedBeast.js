@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 // import { Row, Col, CardGroup} from 'react-bootstrap';
@@ -20,18 +19,23 @@ class HornedBeast extends React.Component{
        })
    }
 
+// 😎😋😋😊function to pass the clickedModel
+displayAsCard = ()=>{
+    this.props.displayCardAsModel(this.props.title)
+}  
+
    
     render() {
         return (
             <div>
-            <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={this.props.imgUrl}  onClick={this.likesCounter}/>
+            <Card style={{ width: '14rem'}} onClick={this.displayAsCard}>
+            <Card.Img variant="top" src={this.props.imgUrl} title={this.props.title}/>
             <Card.Body>
                 <Card.Title>{this.props.title}</Card.Title>
                 <Card.Text>Number Of Likes 💟{this.state.likesCounter}💟</Card.Text>
-                <Card.Text>{this.props.description}</Card.Text>
+                {/* <Card.Text>{this.props.description}</Card.Text> */}
                 <Card.Text>Number Of Horns💥{this.props.horns}💥</Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="danger" onClick={this.likesCounter} >Vote Here</Button>
             </Card.Body>
             </Card>
             </div>

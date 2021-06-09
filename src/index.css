@@ -52,7 +52,8 @@ body div{
   height: 10rem;
 }
 .card {
-  height:30rem;
+  height:23rem;
+  margin: 1rem 1rem;
 }
 
 /* footer style */
@@ -64,4 +65,18 @@ body div{
   height:5rem;
   line-height: 5rem;
   
+}
+
+
+/* style the image inside the modal */
+/* class="modal-body" */
+/* .modal-body{
+  border-radius: 50%;
+} */
+.modal-body img{
+  height: 10rem;
+  width:100%;
+}
+.modal-body p{
+  font-size:1.2rem;
 }
