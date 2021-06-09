@@ -40,6 +40,7 @@ class App extends React.Component {
   // render data
   render() {
     // console.log(this.state.displayHorned);
+    console.log(this.state.displayHorned);
     return (
       <div>
           <Header/>
@@ -59,6 +60,7 @@ class App extends React.Component {
           <Footer/>
       </div>
     )
+    // console.log(this.state.displayHorned);
   }
 }
 

@@ -4,19 +4,13 @@ import Button from 'react-bootstrap/Button';
 
 
 class SelectedBeast extends React.Component {
-    constructor(props) {
-        super(props);
-        
-        console.log('the selected beast is called');
-    }
-
+ 
     // 😎😋😋😊handleClose
     handleClose=() => {
       this.props.handleClose();
     }
 
     render() {
-      console.log(this.props.displayHornedObject);
         return(
            
                       <Modal 
@@ -39,7 +33,7 @@ class SelectedBeast extends React.Component {
                         <br/>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="danger" onClick={this.handelClose}>
+                        <Button variant="danger" onClick={this.handleClose}>
                             Close
                         </Button>
                     </Modal.Footer>
