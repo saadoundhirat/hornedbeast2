@@ -28,8 +28,8 @@ displayAsCard = ()=>{
     render() {
         return (
             <div>
-            <Card style={{ width: '14rem'}} onClick={this.displayAsCard}>
-            <Card.Img variant="top" src={this.props.imgUrl} title={this.props.title}/>
+            <Card style={{ width: '14rem'}} >
+            <Card.Img variant="top" src={this.props.imgUrl} title={this.props.title} onClick={this.displayAsCard}/>
             <Card.Body>
                 <Card.Title>{this.props.title}</Card.Title>
                 <Card.Text>Number Of Likes 💟{this.state.likesCounter}💟</Card.Text>
