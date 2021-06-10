@@ -54,6 +54,23 @@ class Main extends React.Component {
               })
             }
 
+
+    // ==============================================================
+     //// 🤩🤩🤩🤩🤩handle search
+            handleSearch =(searchValue)=>{
+                let searchArr = this.props.horneddata.filter(element=>{
+                    let searchWord =element.title.toLowerCase();
+                    console.log(searchWord)
+                    if(searchWord.match(searchValue)){
+                        return element;
+                    }
+                   })
+            this.setState({
+                SelectedBeast:searchArr
+            })
+        }
+
+
     // ==============================================================
             //// 🤩🤩🤩🤩🤩render function
     render() {
@@ -63,6 +80,7 @@ class Main extends React.Component {
             <FormSelect
                 renderBasedOnSelectValue={this.renderBasedOnSelectValue}
                 handleSort={this.handleSort}
+                handleSearch={this.handleSearch}
             />
 
             {/* RENDER SELECTED BEASTS */}
