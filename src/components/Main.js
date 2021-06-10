@@ -13,6 +13,7 @@ class Main extends React.Component {
         }
     }
 
+    // ===================================================================
 //  🤯🤯🤯🤯 filterring function
     renderBasedOnSelectValue=(selectValue)=>{
         console.log(typeof selectValue);//{1 2 3 100.def}
@@ -31,12 +32,37 @@ class Main extends React.Component {
         })
     }
 
+
+    // ========================================================
+        //  🤯🤯🤯🤯 Sorting function
+        handleSort =(option)=>{
+            let sortArr=this.props.horneddata;
+            switch (option) {
+                case 'horns':
+                        sortArr.sort((a, b) => a.horns < b.horns ? 1 : -1);
+                        break;
+                case 'A-Z':
+                            sortArr.sort((a, b) => a.title > b.title ? 1 : -1);
+                        break;
+                default:
+                        sortArr=this.props.horneddata;
+                        break;
+                    } 
+
+              this.setState({
+                  SelectedBeast:sortArr
+              })
+            }
+
+    // ==============================================================
+            //// 🤩🤩🤩🤩🤩render function
     render() {
         return (
         <div>
             {/* CALL FORM */}
             <FormSelect
                 renderBasedOnSelectValue={this.renderBasedOnSelectValue}
+                handleSort={this.handleSort}
             />
 
             {/* RENDER SELECTED BEASTS */}
@@ -50,7 +76,6 @@ class Main extends React.Component {
                 description={item.description}
                 horns={item.horns}
                 displayCardAsModel={this.props.displayCardAsModel}
-                handleClose={this.props.selectedHorned}
                 />
                 )}
             </CardGroup>

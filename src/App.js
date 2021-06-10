@@ -36,7 +36,7 @@ class App extends React.Component {
       displayHorned:false
     })
   }
-  
+
   // render data
   render() {
     // console.log(this.state.displayHorned);
